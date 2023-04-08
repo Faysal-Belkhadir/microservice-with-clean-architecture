@@ -1,5 +1,5 @@
 # Microservice with Clean Architecture
-A sample **Microservice** application with **Clean Architecture** using **Microsoft .NET 7**
+A simplified **Microservice** sample application with **Clean Architecture** using **Microsoft .NET 7**
 
 This sample application serves as a learning guide or orientation for a Microservice with a Clean Architecture.
 The microservice is based on **CQRS Pattern** and is called via a **Web-API**

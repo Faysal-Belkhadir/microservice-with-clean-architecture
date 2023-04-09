@@ -17,4 +17,4 @@ For consulting or support contact me in my [linkedin account](https://www.linked
 - XUnit
 - Moq
 - Shouldly
-- PostgreSQL
+- PostgreSQL or Microsoft SQL Server

@@ -1,3 +1,6 @@
+> **Note**
+> The implementation is still in progress and I will extend the microservice as soon as possible when I have time again
+
 # Microservice with Clean Architecture
 A simplified **Microservice** sample application with **Clean Architecture** using **Microsoft .NET 7**
 

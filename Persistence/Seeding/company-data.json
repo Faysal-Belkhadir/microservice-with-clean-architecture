@@ -1,0 +1,77 @@
+﻿{
+
+  "Id": "29d18d40-0e64-4837-9420-92130a0ed253",
+  "Name": "ITPrio",
+  "Address": "Sun Street 23 8001 Zurich",
+  "Country": "Swiss",
+  "Designation": "Our main goal is to transform business objectives into technical operational goals and achieve them using leading-edge technologies, data and design.",
+  "CreatedBy": "Seeder",
+  "ModifiedBy": "Seeder",
+  "Departments": [
+    {
+      "Id": "33d18d40-0e64-4837-9420-92130a0ed211",
+      "Name": "Software Development",
+      "Designation": "Software Development & Architecture",
+      "CompanyId": "29d18d40-0e64-4837-9420-92130a0ed253",
+      "CreatedBy": "Seeder",
+      "ModifiedBy": "Seeder",
+      "Employees": [
+        {
+          "Id": "12e18d40-0e64-4837-9420-92130a0ed211",
+          "Position": "Software Developer",
+          "HiredOn": "2018-01-01",
+          "FirstName": "Joe",
+          "LastName": "Leod",
+          "DateOfBirth": "1978-05-04",
+          "Gender": "M",
+          "Email": "j.leod@mail.com",
+          "Address": "Mountain Street 33 8011 Zurich",
+          "Phone": "+415643221",
+          "DepartmentId": "33d18d40-0e64-4837-9420-92130a0ed211",
+          "CreatedBy": "Seeder",
+          "ModifiedBy": "Seeder"
+        },
+        {
+          "Id": "37018d40-0e64-4837-9420-92130a0ed211",
+          "Position": "Frontend Developer",
+          "HiredOn": "0001-01-01",
+          "FirstName": "Milio",
+          "LastName": "Lorenes",
+          "DateOfBirth": "1980-09-03",
+          "Gender": "M",
+          "Email": "m.Lorenes@mail.com",
+          "Address": "Jupiter Street 8 8010 Zurich",
+          "Phone": "Phone",
+          "DepartmentId": "33d18d40-0e64-4837-9420-92130a0ed211",
+          "CreatedBy": "Seeder",
+          "ModifiedBy": "Seeder"
+        }
+      ]
+    },
+    {
+      "Id": "39d18d40-0e64-4837-9420-92130a0ed100",
+      "Name": "Accounting",
+      "Designation": "Accounting Affairs",
+      "CompanyId": "29d18d40-0e64-4837-9420-92130a0ed253",
+      "CreatedBy": "Seeder",
+      "ModifiedBy": "Seeder",
+      "Employees": [
+        {
+          "Id": "84518d40-0e64-4837-9420-92130a0ed211",
+          "FirstName": "Lena",
+          "LastName": "Cinodar",
+          "DateOfBirth": "1986-08-12",
+          "Gender": "F",
+          "Email": "l.cinodar@mail.com",
+          "Address": "Alpina Street 18 8020 Zurich",
+          "Phone": "Phone",
+          "Position": "Accountant",
+          "HiredOn": "2019-06-09",
+          "DepartmentId": "33d18d40-0e64-4837-9420-92130a0ed211",
+          "CreatedBy": "Seeder",
+          "ModifiedBy": "Seeder"
+        }
+      ]
+    }
+  ]
+}

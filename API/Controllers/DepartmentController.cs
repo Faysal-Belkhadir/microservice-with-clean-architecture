@@ -8,8 +8,9 @@ public class DepartmentController : ApiBaseController<DepartmentController>
 {
     public DepartmentController(
         ILogger<DepartmentController> logger,
-        IWebHostEnvironment webHostEnvironment
-    ) : base(logger, webHostEnvironment)
+        IWebHostEnvironment webHostEnvironment,
+        IBusMediator busMediator
+    ) : base(logger, webHostEnvironment, busMediator)
     {
     }
 

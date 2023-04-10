@@ -8,8 +8,9 @@ public class EmployeeController : ApiBaseController<EmployeeController>
 {
     public EmployeeController(
         ILogger<EmployeeController> logger,
-        IWebHostEnvironment webHostEnvironment
-    ) : base(logger, webHostEnvironment)
+        IWebHostEnvironment webHostEnvironment,
+        IBusMediator busMediator
+    ) : base(logger, webHostEnvironment, busMediator)
     {
     }
 

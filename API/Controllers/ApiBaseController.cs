@@ -11,14 +11,17 @@ public abstract class ApiBaseController<T> : ControllerBase
 {
     protected readonly ILogger<T> Logger;
     protected readonly IWebHostEnvironment WebHostEnvironment;
+    protected readonly IBusMediator BusMediator;
 
     protected ApiBaseController(
         ILogger<T> logger,
-        IWebHostEnvironment webHostEnvironment
+        IWebHostEnvironment webHostEnvironment,
+        IBusMediator busMediator
     )
     {
         Logger = logger;
         WebHostEnvironment = webHostEnvironment;
+        BusMediator = busMediator;
     }
 
     protected ObjectResult ReturnStatusResult(

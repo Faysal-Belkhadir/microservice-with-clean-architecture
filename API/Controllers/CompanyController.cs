@@ -8,14 +8,17 @@ public class CompanyController : ApiBaseController<CompanyController>
 {
     public CompanyController(
         ILogger<CompanyController> logger,
-        IWebHostEnvironment webHostEnvironment
-    ) : base(logger, webHostEnvironment)
+        IWebHostEnvironment webHostEnvironment,
+        IBusMediator busMediator
+    ) : base(logger, webHostEnvironment, busMediator)
     {
     }
 
     [HttpGet(nameof(AboutUs))]
-    public async Task<IActionResult> AboutUs()
+    public async Task<IActionResult> AboutUs(Guid companyId)
     {
-        return Ok(new Company());
+        var companyInfo = await BusMediator.SendQuery(new QueryGetCompanyInfo(companyId));
+
+        return Ok(companyInfo ?? $"No company found with the Id = {companyId}");
     }
 }

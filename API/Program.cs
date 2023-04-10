@@ -3,6 +3,8 @@
 #region usings
 
 using MicroserviceWithCleanArchitecture.API.Extensions;
+using MicroserviceWithCleanArchitecture.Application;
+using MicroserviceWithCleanArchitecture.Infrastructure.Extensions;
 using MicroserviceWithCleanArchitecture.Persistence;
 using MicroserviceWithCleanArchitecture.Persistence.Seeding;
 
@@ -16,6 +18,9 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 var serviceCollection = builder.Services;
+serviceCollection.AddCqrsInfra(typeof(IApplicationIndicator));
+serviceCollection.AddCqrsServices();
+serviceCollection.AddRepositoryServices();
 serviceCollection.AddDatabase(configuration);
 serviceCollection.AddEndpointsApiExplorer();
 serviceCollection.AddSwaggerGen(_ => _.SwaggerDoc("v1", new OpenApiInfo { Title = "Microservice with Clean Architecture", Version = "v1" }));
